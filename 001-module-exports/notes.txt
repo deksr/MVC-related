@@ -1,0 +1,5 @@
+script-one.js has module to be exported.
+
+script-two.js has modules to be required.
+
+since browser cannot run require, this has to be run in the terminal. run `node script-two.js'
