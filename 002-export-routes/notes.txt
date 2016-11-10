@@ -1,5 +1,10 @@
 we can build our node own modules.
-lets create a folder called own_modules.
+
+1)lets create a folder called own_modules and add function.module.exports them.
+
+2)require this created file in routes
+
+
 
 
 
