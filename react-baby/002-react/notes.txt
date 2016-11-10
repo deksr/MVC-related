@@ -1,0 +1,3 @@
+https://gist.github.com/joshblack/a5996d2ccfdb0f9096b2
+
+https://github.com/wesbos/Learn-Redux

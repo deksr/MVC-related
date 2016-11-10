@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+
+	<div id="react-app">
+
+	</div>
+
+
+
+<script src="https://unpkg.com/react@15.3.2/dist/react.js"> </script>
+
+<script src="https://unpkg.com/react-dom@15.3.2/dist/react-dom.js"> </script>
+    
+
+
+
+<script>
+// var VictoriaCake =  React.createClass({
+//  	render: function(){
+//  		return React.DOM.span("null", "Can I get a custom orders please?")
+//  	}
+//  })
+
+
+//   ReactDOM.render(
+// 		React.createElement(VictoriaCake), 
+// 		document.getElementById('react-app')
+//   )
+
+
+
+  var Cake =  React.createClass({
+
+  	propTypes: {
+        name: React.PropTypes.string.isRequired
+    },
+
+	  render: function(){
+	 		return React.DOM.div(null, 
+	 			React.DOM.textarea({ 
+	 				defaultValue: this.props.text
+	 			}),
+	 			React.DOM.h4(null, this.props.text.length)
+	 	)}
+
+  })
+
+
+  ReactDOM.render(
+		React.createElement(Cake,{
+			text: "Fat Rascal"
+		}), 
+		document.getElementById('react-app')
+  )
+
+
+</script>
+	
+</body>
+</html>
