@@ -1,3 +1,5 @@
 001-module-exports: basic of how to export a module in node.js
 
 002-export-routes: same as above but we are using this in node.js routes
+
+003-gulp-and-node: using gulp ti minify files in node.js

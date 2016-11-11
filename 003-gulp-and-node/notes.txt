@@ -1,0 +1,3 @@
+2) `npm init`// this will create a packge.json file, then npm install gulp --save, `npm install` //gulp connect is a web server. `npm start` and navigate to `http://localhost:8080`
+3) create a gulpfile.js in root folder and configure the files and folders
+4)
