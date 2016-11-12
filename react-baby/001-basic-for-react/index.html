@@ -79,23 +79,63 @@
 
 
   /////classes
-
   class HumanBeing {
 
-	  constructor(name, language, iq) {
-	    this.beingName = name;
-	    this.languageSpeak = language;
-	    this.iq = iq; 
+	  constructor(name, eyes, hands, legs) {
+	  	this.beingname = name;
+	    this.beingeyes = eyes;
+	    this.beinghands = hands;
+	    this.beinglegs =legs; 
 	  }
 
-	  speaking(otherlanguage) {
-	    console.log(this.beingName+ 'speaks' +this.languageSpeak + 'and' + otherlanguage)
+	  humanSkill(otherlanguage) {
+	    console.log(this.beingname + 'with' + this.beingeyes + 'speaks' + otherlanguage  )
 	  }
 
 	}
 
-	var alex = new HumanBeing('alex', 'english', 4);
-	console.log( alex.speaking('french') ); // 623
+	var alex = new HumanBeing('alex', 'blue color', 2, 2);
+	console.log( alex.humanSkill('french') ); // 623
+
+
+	// subclasses
+
+
+	class Animals extends HumanBeing {
+		constructor(name, eyes, hands, legs, tail) {
+	    super(name, eyes, hands, legs);
+	    this.animaltail = tail
+	  }
+
+    animalSkill(skillset){
+    	console.log(this.beingname + 'with' + this.animaltail + 'belongs to animal kingdom and has' + skillset)
+    }
+
+	}
+
+		var labrdor = new Animals('max', 'brown color', 2, 2, 1);
+	console.log( labrdor.animalSkill('wagging tail') ); // 623
+
+		// same as writing below but extends keyword makes it simplier
+
+		// class Animals {
+		// 	constructor(name, eyes, hands, legs, tail) {
+		//   	this.beingname = name;
+		//     this.beingeyes = eyes;
+		//     this.beinghands = hands;
+		//     this.beinglegs =legs;
+		//     this.animaltail = tail
+	 //    }
+
+	 //    animalSkill(skillset){
+  //   	  console.log(this.beingname + 'with' + this.animaltail + 'belongs to animal kingdom and has' + skillset)
+  //     }  
+
+		// }
+
+
+
+
 
 
 
