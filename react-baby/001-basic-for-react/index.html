@@ -78,6 +78,28 @@
 
 
 
+  /////classes
+
+  class HumanBeing {
+
+	  constructor(name, language, iq) {
+	    this.beingName = name;
+	    this.languageSpeak = language;
+	    this.iq = iq; 
+	  }
+
+	  speaking(otherlanguage) {
+	    console.log(this.beingName+ 'speaks' +this.languageSpeak + 'and' + otherlanguage)
+	  }
+
+	}
+
+	var alex = new HumanBeing('alex', 'english', 4);
+	console.log( alex.speaking('french') ); // 623
+
+
+
+
 	</script>
 	
 </body>
