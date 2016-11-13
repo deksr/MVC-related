@@ -11,18 +11,13 @@ Therefore In package.json add  start to scripts
 
 2) Using es6 export modules: 
  http://wesbos.com/javascript-modules/
+ I've created single function module and multiple fucntion module which are all getting imported in scripts.js(These all are in es6) but our browser doesn't transpile es6. so what do we do? So, Go to step 3 for solution.
 
-3) Installing babel as a transpiler for es6 modules(read below). or even better option is to: "There are a few popular bundlers, most of which use Babel as a dependency to transpile your ES6 modules to CommmonJS.""
-
-
-
+3) Installing babel as a transpiler for es6 modules(read below). or even better option is to: "There are a few popular bundlers, most of which use Babel as a dependency to transpile your ES6 modules to CommmonJS."" example: webpack, browserify etc...
 
 
 
-
-
-
-modules are part of es6. browsers don't have transpilers where it takes ECMAScript 6 source code and outputs valid ES5 that will run in all modern, and even some not-so-modern, JavaScript browser environments.
+regarding babel: modules are part of es6. browsers don't have transpilers where it takes ECMAScript 6 source code and outputs valid ES5 that will run in all modern, and even some not-so-modern, JavaScript browser environments.
 
 how to create coplier for es6:http://mammal.io/articles/using-es6-today/
 
@@ -32,6 +27,10 @@ how to create coplier for es6:http://mammal.io/articles/using-es6-today/
  `npm install babel-cli --save`
 
  https://babeljs.io/docs/usage/cli/
+
+ Note that after setting baabel it still throws error in terminal when you run webpack. But works on browser.
+
+4) browse through the file setup in lesson.txt
 
 
 
