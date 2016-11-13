@@ -3,3 +3,7 @@
 002-export-routes: same as above but we are using this in node.js routes
 
 003-gulp-and-node: using gulp ti minify files in node.js
+
+004-socket-io: This is not completed. Need to read still.
+
+005-module-for-front-end: Here learnt how to import export es6 modules, learnt to integrate babel transpilar inside webpack.
