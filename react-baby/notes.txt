@@ -1,0 +1,12 @@
+001-basic-for-react: this has basic es6 syntax necessary for understanding react syntax. this also has classes in it.
+
+002-react: some more react syntax: especially classes. 
+
+003-react-with-server: still not sure why i created this. useful for configuring web pack. So keeping it even though it’s still a junk.
+
+004-react-scaffold: This is used to learn how to create a scaffold using 
+npm install -g create-react-app
+
+
+
+
