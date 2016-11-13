@@ -1,0 +1,37 @@
+Things learned:
+
+1) Created a simple.js. If app.js or server.js is not found then npm start doesn't start. 
+Therefore In package.json add  start to scripts
+ "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node simple.js"
+  },
+
+  Or even simpler way of doing is just run `node simple.js`
+
+2) Using es6 export modules: 
+ http://wesbos.com/javascript-modules/
+
+3) Installing babel as a transpiler for es6 modules.
+
+4) tehn add module loader
+
+
+
+
+
+how to create coplier for es6:http://mammal.io/articles/using-es6-today/
+
+modules are part of es6. browsers don't have transpilers where it takes ECMAScript 6 source code and outputs valid ES5 that will run in all modern, and even some not-so-modern, JavaScript browser environments.
+
+1. install babel. 
+`npm install -g babel`
+ `npm install -g babel-cli`
+ `npm install babel-cli --save`
+
+ https://babeljs.io/docs/usage/cli/
+
+
+
+
+2. Create modules for import and export.
