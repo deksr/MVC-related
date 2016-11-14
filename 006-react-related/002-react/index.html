@@ -14,43 +14,109 @@
 
 	</div>
 
+		<div id="root-one"></div>
+
+		<div id="root-two"></div>
+
+
+
 
 
 <script src="https://unpkg.com/react@15.3.2/dist/react.js"> </script>
 
+
+<!-- this is used to render on the dom.  ReactDOM.render-->
 <script src="https://unpkg.com/react-dom@15.3.2/dist/react-dom.js"> </script>
 
+
+<!-- this is a precomplier-->
 <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"> </script>
     
 
 
 <script type="text/babel">
 
+// here we are writing in jsx and the babel converts the syntax for us.
+
+
   ReactDOM.render(
     <h1>Hello, world!</h1>,
     document.getElementById('root')
   );
 
-  //   ReactDOM.render(){
-  // 	return <div className="jumbotron">Best Application </div>;
-  // };
+
+  /////
+
+
+  /////// Tis is a simple example all written es6
+
+	class App extends React.Component {
+	  render() {
+	    return (
+	    	<div> Hello there. This is a simple example </div>
+	    )
+	  }
+	}
+
+	
+
+	ReactDOM.render(
+	  <App />,
+	  document.getElementById('root-two')
+	);
+
+
+///////  This is written in javascript
+
+  const user = {
+	  firstName: 'Harper',
+	  lastName: 'Perez'
+	};
+
+
+	function formatName(user) {
+	  return user.firstName + ' ' + user.lastName;	  
+	  // console.log( user.firstName + ' ' + user.lastName);
+	}
+
+
+	const greeting = <h1> Hello, {formatName(user)}!</h1>
+	
+
+	ReactDOM.render(
+	  greeting,
+	  document.getElementById('root-one')
+	);
+
+
+
+
+
+
+
+	/////
 
 
 </script>
 
 
 <script>
-// var VictoriaCake =  React.createClass({
-//  	render: function(){
-//  		return React.DOM.span("null", "Can I get a custom orders please?")
-//  	}
-//  })
+
+// Here we are writing in babel. 
+// This is in jsx:
+// const element = (
+//   <h1 className="greeting">
+//     Hello, world!
+//   </h1>
+// );
 
 
-//   ReactDOM.render(
-// 		React.createElement(VictoriaCake), 
-// 		document.getElementById('react-app')
-//   )
+// this is in babel:
+// const element = React.createElement(
+//   'h1',
+//   {className: 'greeting'},
+//   'Hello, world!'
+// );
 
 
 
@@ -79,12 +145,7 @@
   )
 
 
-  ////
-
-
-
-
-
+ ////
 </script>
 	
 </body>
