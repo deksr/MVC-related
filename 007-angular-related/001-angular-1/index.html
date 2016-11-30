@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<body>
+
+<div ng-app="myapp">
+<div ng-controller = "HelloController" >
+         <h2>Welcome {{helloTo.name}}!</h2>
+         <li ng-repeat = "countryname in objects">
+         <h2>resides in {{countryname.name}}</h2>
+
+      </div>
+</div>
+
+<script> 
+angular.module("myapp", [])
+.controller("HelloController", function($scope) {
+  $scope.helloTo = {};
+  $scope.helloTo.name = "Ann";
+  $scope.objects=[{locale:'en-US',name:'United States'},{locale:'uk',name:'United Kingdom'} ]
+});
+
+
+
+</script>
+
+</body>
+</html>

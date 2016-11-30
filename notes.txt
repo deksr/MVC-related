@@ -7,3 +7,8 @@
 004-socket-io: This is not completed. Need to read still.
 
 005-module-for-front-end: Here learnt how to import export es6 modules, learnt to integrate babel transpilar inside webpack.
+
+
+006-react-related has some basic of reacts.
+
+007-angular-related has basic of angular.
