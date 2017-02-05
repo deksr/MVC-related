@@ -1,0 +1,6 @@
+Standard is a JS module for creating a consistent style. Run it with 
+`$ npm run test`
+When possible standard will fix some styles automatically. Other errors will be listed in the terminal.
+
+
+
