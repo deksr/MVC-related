@@ -3,4 +3,8 @@ Standard is a JS module for creating a consistent style. Run it with
 When possible standard will fix some styles automatically. Other errors will be listed in the terminal.
 
 
+to install a module in the development environment do:
+$ npm install standard --save-dev
+
+
 
