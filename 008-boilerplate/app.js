@@ -5,8 +5,9 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var session = require('express-session');
-var hbs = require('express-handlebars')
-var methodOverride = require('method-override')
+var hbs = require('express-handlebars');
+var methodOverride = require('method-override');
+
 var app = express();
 
 // template engines//**********************
