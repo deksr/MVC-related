@@ -5,8 +5,8 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-	var x = randomstring({length: 10})
-	console.log(x)
+	var x = randomstring({length: 10});
+	console.log(x);
   res.render('index', { title: 'Express' });
 });
 
